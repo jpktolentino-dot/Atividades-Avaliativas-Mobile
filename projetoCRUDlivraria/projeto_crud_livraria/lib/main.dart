@@ -205,6 +205,8 @@ void main() {
                             break;
                     }
                 }
+                break; 
+                
             case 4:
                 print("="*50);
                 print("Remover livro");
@@ -222,6 +224,7 @@ void main() {
                     print("="*50);
                     getLivro(entradaNome);
                     listarLivros();
+                    break;
                 }
         }
     }
