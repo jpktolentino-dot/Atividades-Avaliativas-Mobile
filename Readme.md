@@ -95,7 +95,7 @@ A tela é construída com `Column` e `Row`. O widget `Expanded` faz cada botão 
 [    0    ]       [  .  ]  [  =  ]
 ```
 
-## ▶Como Executar
+## Como Executar
 
 Pré-requisitos: Flutter SDK instalado. Veja [flutter.dev/docs/get-started](https://flutter.dev/docs/get-started).
 
