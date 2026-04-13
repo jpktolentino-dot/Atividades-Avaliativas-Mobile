@@ -10,10 +10,10 @@
 
 | Integrante | GitHub |
 |---|---|
-| Eduardo | [@dev-eduardo](https://github.com/Eduardoh5179) |
-| João | [@dev-joão](https://github.com/jpktolentino-dot) |
-| Ramon | [@dev-ramon](https://github.com/Ramon-Albini) |
-| Murilo | [@dev-murilo](https://github.com/omourilo) |
+| Eduardo | [@Eduardoh5179](https://github.com/Eduardoh5179) |
+| João | [@jpktolentino-dot](https://github.com/jpktolentino-dot) |
+| Ramon | [@Ramon-Albini](https://github.com/Ramon-Albini) |
+| Murilo | [@omourilo](https://github.com/omourilo) |
 
 ---
 
