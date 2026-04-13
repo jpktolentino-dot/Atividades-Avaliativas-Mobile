@@ -14,5 +14,5 @@ Demonstrar a correta configuração do ambiente de desenvolvimento para a lingua
    dart run hello_world.dart
 
 ## Exemplo de saída no Terminal:
-    ```bash
+   ```bash
     Hello World
