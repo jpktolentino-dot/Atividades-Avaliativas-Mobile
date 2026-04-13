@@ -13,55 +13,77 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const ListaTarefas(title: 'Flutter Demo Home Page'),
+      debugShowCheckedModeBanner: false,
+
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class ListaTarefas extends StatefulWidget {
+  const ListaTarefas({super.key, required this.title});
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<ListaTarefas> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+class _MyHomePageState extends State<ListaTarefas> {
+  final List<String> _tarefas = [];
+  final TextEditingController _controller = TextEditingController();
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  void _adicionarTarefas(){
+    if(_controller.text.isNotEmpty){
+      setState((){
+        _tarefas.add(_controller.text);
+        _controller.clear();
+      });
+    }
   }
 
+  void _removerTarefa(int index){
+    setState((){
+      _tarefas.removeAt(index);
+    });
+  }
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-      appBar: AppBar(
-
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-
-          mainAxisAlignment: .center,
-          children: [
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+      appBar: AppBar(title: Text('Minha Lista de Tarefas'), backgroundColor: Colors.blueAccent),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: _controller,
+                    decoration: InputDecoration(hintText: 'Digite uma nova tarefa...'),
+                  ),
+                ),
+                IconButton(
+                  icon: Icon(Icons.add, color: Colors.blueAccent),
+                  onPressed: _adicionarTarefas,
+                ),
+              ],
             ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: _tarefas.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  title: Text(_tarefas[index]),
+                  trailing: IconButton(
+                    icon: Icon(Icons.delete, color: Colors.redAccent),
+                    onPressed: () => _removerTarefa(index),
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
