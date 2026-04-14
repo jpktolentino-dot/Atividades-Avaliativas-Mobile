@@ -1,4 +1,6 @@
 # Calculadora Flutter
+João Pedro Kloster Tolentino
+RA: 230875012
 
 Uma calculadora mobile desenvolvida em Flutter/Dart. O projeto possui componentização e gerenciamento de estado em Flutter.
 
