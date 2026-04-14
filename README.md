@@ -62,6 +62,6 @@ git clone https://github.com/jpktolentino-dot/Atividades-Avaliativas-Mobile/new/
 ## ⚠️ Observações
 
 -   Os dados são armazenados apenas em memória (lista), ou seja, não há
-    persistência em banco de dados\
+    persistência em banco de dados
 
 ------------------------------------------------------------------------
