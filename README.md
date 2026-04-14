@@ -65,3 +65,7 @@ git clone https://github.com/jpktolentino-dot/Atividades-Avaliativas-Mobile/new/
     persistência em banco de dados
 
 ------------------------------------------------------------------------
+
+## 🧾 Licença
+- Código desenvolvido por Eduardo Henrique Rodrigues
+- livre para clonar e editar
