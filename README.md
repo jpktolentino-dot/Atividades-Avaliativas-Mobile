@@ -32,23 +32,6 @@ O sistema permite:
 ------------------------------------------------------------------------
 
 
-## 🧩 Estrutura do Sistema
-
-### 📚 Classe `Livro`
-
-Representa um livro dentro do sistema.
-
-**Atributos:**
-
--   `titulo`
--   `autor`
--   `anoDePublicacao`
--   `id` (ISBN)
-
-Todos os atributos são privados e acessados via getters e setters.
-
-------------------------------------------------------------------------
-
 ## ⚙️ Instalação do Sistema
 
 - Certifique-se de ter o flutter instalado
